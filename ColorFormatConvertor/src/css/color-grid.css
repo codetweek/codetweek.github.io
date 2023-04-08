@@ -1,0 +1,164 @@
+:root {
+
+    --red: 255;
+    --green: 255;
+    --blue: 255;
+    --hue: 0;
+    --sat: 0;
+    --lig: 100;
+    --font-col: rgb(0, 0, 0);
+    --tab-col: transparent;
+    --tab-active: rgb(0, 0, 0);
+    --font-active: rgb(255, 255, 255);
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto';
+}
+
+.tab.tab-active {
+    background-color: var(--tab-active);
+    color: var(--font-active);
+
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--tab-col);
+    color: var(--font-col);
+    flex-grow: 1;
+    text-align: center;
+    padding: 25px;
+    border: 2px solid var(--font-col);
+
+}
+
+.tab:nth-child(1) {
+    border-radius: 4px 0 0 4px;
+}
+
+.tab:nth-child(2) {
+    border-radius: 0px 4px 4px 0px;
+}
+
+.param {
+    display: flex;
+    flex-direction: column;
+    color: var(--font-col);
+}
+
+.container {
+    /* border: 2px solid var(--font-col); */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    width: 50vw;
+    margin: auto;
+    clear: both;
+}
+
+.tab-subcont,
+.subsec {
+    text-align: center;
+
+}
+
+.tab-subcont {
+    /* border:1px solid green; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 40px;
+}
+
+.subsec,
+.subsec2 {
+    border: 2px solid var(--font-col);
+    padding: 25px;
+    border-radius: 4px;
+   
+}
+
+.subsec-rgb,
+.subsec-hsl {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;;
+    width:100%;
+}
+
+.param:nth-child(1)
+{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+
+/* .param {
+    flex-grow: 1;
+} */
+.param{
+    max-width: 16vw;
+    overflow: hidden;
+
+}
+.param .label {
+    text-align: left;
+    margin: 4px;
+    font-weight: bolder;
+}
+
+.param .inp {
+    text-align: left;
+    margin: 2px;
+    font-size: large;
+    border-radius: 2px;
+    background: transparent;
+    padding: 8px;
+    margin: 4px;
+    border: 2px solid var(--font-col);
+    color: var(--font-col);
+
+}
+
+.subsec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.param2 {
+    font-weight: 800;
+    margin: 8px auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    color: var(--font-col);
+
+}
+
+.param2>div {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.param2>div:nth-child(2) {
+    margin-top: 4px;
+    font-weight: 100;
+    font-size: medium;
+    margin-bottom: 8px;
+}
+
+.copy-me
+{
+    cursor: pointer;
+}
+
+.heading {
+    color: var(--font-col);
+}

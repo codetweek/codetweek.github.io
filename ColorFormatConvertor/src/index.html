@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./css/color-grid.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/code-grid.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">Convert Color Formats</h2>
+        <div class="tab-subcont">
+            <div class="tab tab-active" id="0">RGB</div>
+            <div class="tab" id="1">HSL</div>
+        </div>
+        <div class="subsec">
+            <div class="subsec-rgb">
+                <div class="param">
+                    <div class="label">Red</div>
+                    <input class="inp" type="number" id="red" name="quantity" min="0" max="255" value="255">
+                </div>
+                <div class="param">
+                    <div class="label">Green</div>
+                    <input class="inp" type="number" id="green" name="quantity" min="0" max="255" value="255">
+                </div>
+                <div class="param">
+                    <div class="label">Blue</div>
+                    <input class="inp" type="number" id="blue" name="quantity" min="0" max="255" value="255">
+                </div>
+            </div>
+            <div class="subsec-hsl">
+                <div class="param">
+                    <div class="label">Hue</div>
+                    <input class="inp" type="number" id="hue" name="quantity" min="0" max="360" value="0">
+                </div>
+
+                <div class="param">
+                    <div class="label">Saturation</div>
+                    <input class="inp" type="number" id="sat" name="quantity" min="0" max="100" value="100">
+                </div>
+
+                <div class="param">
+                    <div class="label">Lightness</div>
+                    <input class="inp" type="number" id="lig" name="quantity" min="0" max="100" value="100">
+                </div>
+            </div>
+        </div>
+        <div class="subsec2">
+            <div class="param2">
+                <div class="label">RGB</div>
+                <div title="Copy" class="copy-me rgb-value">rgba(255, 255, 255, 1.0)</div>
+            </div>
+            <div class="param2">
+                <div class="label">HSL</div>
+                <div title="Copy" class="copy-me hsl-value">hsl(0, 0%, 100%)</div>
+
+            </div>
+            <div class="param2">
+                <div class="label">HEX</div>
+                <div title="Copy" class="copy-me hex-value">#FFFFFF</div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
