@@ -1,6 +1,7 @@
 .par1
 {
     background-image: url(images/parallax-1.png);
+    background-attachment: fixed;
     
 }
 .par2
