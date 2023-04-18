@@ -8,6 +8,8 @@ let txbg = document.getElementsByClassName('text-content')[0];
 
 let scene = document.querySelectorAll('.bg-par');
 
+let imag = document.querySelectorAll('.img-par');
+
 window.addEventListener('scroll',()=> {
 
     let value = window.scrollY;
@@ -33,5 +35,24 @@ window.addEventListener('scroll',()=> {
     txbg.style.backgroundColor="hsl(171, 76%, "+ (13-(13*(value*0.001))) + "%)";
     
 
+    imag.forEach((item)=>
+    {
+    if(isPartlyInViewport(item))
+    {
+        item.style.objectPosition = (-(value/10))+"px 0px";
+    }
+});
+
 
 });
+
+function isPartlyInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+    const vertInView = rect.top <= windowHeight && rect.bottom >= 0;
+    const horInView = rect.left <= windowWidth && rect.right >= 0;
+    
+    return vertInView && horInView;
+  }
