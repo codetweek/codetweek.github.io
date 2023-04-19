@@ -1,3 +1,10 @@
+body
+{
+    padding:0 0;
+    margin : 0 0;
+    background-color:black;
+}
+
 .par1
 {
     background-image: url(images/parallax-1.png);
@@ -106,3 +113,190 @@ margin:40px;
 #Work{
     background-image: linear-gradient( black,hsl(171, 76%, 13%));
 }
+
+.smp-par
+{
+    /* background-image: url('./images/img-2.jpeg'); */
+    background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.6) ), url('./images/img-2.jpeg');
+    background-size: cover;
+
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+.content-btn
+{
+    
+    text-align: center;
+    padding:80px;
+    /* border:2px solid white; */
+    width:40vw;
+    margin:10px;
+    background-image: url(./images/img-2.jpeg);
+    /* backdrop-filter: blur(40px); */
+    background-size: cover;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(40px); */
+    /* backdrop-filter: sepia(90%); */
+    /* backdrop-filter: blur(40px); */
+    /* box-shadow: 0px 10px 14px -3px rgba(0,0,0,0.4); */
+}
+
+
+/* CONTENT-BTN CLASS CHANGES */
+
+.content-btn > h4
+{
+    color: black;
+    font-size:16px;
+    font-family:sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+.content-btn > h2
+{
+    color: black;
+    font-size:32px;
+    font-family:sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content-btn > h3
+{
+    color: black;
+    font-size:18px;
+    font-family:sans-serif;
+    font-weight: 400;
+    text-transform:capitalize;
+    padding:20px;
+}
+
+.glass-btn
+{
+    background-color: transparent;
+    padding:20px;
+    border:2px solid black;
+    color: black;
+    font-size:20px;
+    font-family:sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.glass-btn:hover
+{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+    mix-blend-mode:multiply;
+    
+    transition: background-color 400ms ease;
+
+}
+
+/* END */
+
+/* SECTION WITH BOXES */
+
+.section-main
+{
+    background-image: url('./images/smp-img1.jpeg');
+    padding:20px;
+}
+
+.section {
+    width:50vw;
+    margin: 0 auto;
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding:20px;
+    grid-gap: 20px;
+    overflow:hidden;
+  }
+  
+  .box {
+    background-color: #F9C9B6;
+    padding: 20px;   
+    font-size: 1.2em;
+    line-height: 1.5;
+    /* text-align: center; */
+    grid-column: span 1;
+    grid-row: span 1;
+    height:calc(100vh/2 - 60px);
+    background-size: contain;
+    background-position: 300px;
+    background-attachment: fixed;
+    background-image: url('./images/box-img4.jpeg');
+    box-shadow: inset 2px 0px 14px 0px rgba(0,0,0,0.4);
+    transition: transform 500ms ease;
+
+  }
+  
+
+  .box:nth-child(1)
+  {
+    border-top-left-radius: 150px;
+  }
+  .box:nth-child(2)
+  {
+    border-top-right-radius: 150px;
+    }
+
+    .box:nth-child(3)
+  {
+    border-bottom-left-radius: 150px;
+  }
+  .box:nth-child(4)
+  {
+    border-bottom-right-radius: 150px;
+    }
+
+  /* #box1
+  {
+    background-image: url('./images/box-img1.jpeg');
+  }
+
+  #2
+  {
+    background-image: url(./images/box-img2.jpeg);
+  }
+
+  #3
+  {
+    background-image: url(./images/box-img3.jpeg);
+  }
+
+  #4
+  {
+    background-image: url(./images/box-img4.jpeg);
+  }
+
+  #5
+  {
+    background-image: url(./images/box-img5.jpeg);
+  }
+
+  #6
+  {
+    background-image: url(./images/box-img6.jpeg);
+  } */
+  /* .box:nth-child(3n+4) {
+    grid-column: span 3;
+  } */
+  
+
+  
+
+/* END */
